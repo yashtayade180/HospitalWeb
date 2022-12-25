@@ -4,21 +4,21 @@ const articles = [
     title: "Beds",
     thumbnail: "/images/bed.png",
     color: "bedcol",
-    database: "56",
+    database: "5",
   },
   {
     name: "doc",
     title: "Doctors",
     thumbnail: "/images/dash_doc.jpg",
     color: "doccol",
-    database: "10",
+    database: "5",
   },
   {
     name: "doc",
     title: "Patients",
     thumbnail: "/images/dash1.jpg",
     color: "patcol",
-    database: "456",
+    database: "7",
   },
   {
     name: "doc",
@@ -32,7 +32,7 @@ const articles = [
     title: "Nurses",
     thumbnail: "/images/data_nurse.jpg",
     color: "nurcol",
-    database: "23",
+    database: "4",
   },
   {
     name: "doc",
@@ -71,17 +71,17 @@ const articles = [
   },
   {
     name: "doc",
-    title: "Patients",
+    title: "Reports",
     thumbnail: "/images/dash1.jpg",
-    color: "patcol",
-    database: "456",
+    color: "pocol",
+    database: "7",
   },
   {
     name: "doc",
-    title: "Blood",
+    title: "Branches",
     thumbnail: "/images/dash_blood.png",
-    color: "blocol",
-    database: "12",
+    color: "ibrcol",
+    database: "2",
   },
 ];
 

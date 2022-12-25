@@ -3,6 +3,7 @@ import "./style.css";
 import data from "./data";
 
 const Dbox = () => {
+  console.log(data);
   return (
     <>
       <div className="dbox">

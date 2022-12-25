@@ -28,6 +28,7 @@ const HomeBed = () => {
     });
 
     const data = await res.json();
+    // console.log("the length is ", data.length);
     console.log(data);
 
     if (res.status === 422 || !data) {
