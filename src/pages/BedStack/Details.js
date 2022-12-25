@@ -8,6 +8,7 @@ import WorkIcon from "@mui/icons-material/Work";
 import PhoneAndroidIcon from "@mui/icons-material/PhoneAndroid";
 import LocationOnIcon from "@mui/icons-material/LocationOn";
 import { NavLink, useParams, useNavigate } from "react-router-dom";
+import CloseIcon from "@mui/icons-material/Close";
 
 const DetailsBed = () => {
   const [getuserdata, setUserdata] = useState([]);
@@ -65,6 +66,11 @@ const DetailsBed = () => {
       className="container mt-25 bg-light border border-1 mb-5 "
       style={{ marginTop: 100, paddingLeft: 30, paddingRight: 30 }}
     >
+      <NavLink to="/management/bedallotment">
+        <button className=" close btn btn-light" style={{ marginTop: 20 }}>
+          <CloseIcon />
+        </button>
+      </NavLink>
       <h1
         classname="headmain"
         style={{
@@ -106,8 +112,9 @@ const DetailsBed = () => {
                 style={{
                   width: 140,
                   marginBottom: 10,
+                  marginTop: 15,
                   height: 140,
-                  marginLeft: 65,
+                  marginLeft: 80,
                 }}
                 alt="profile"
               />

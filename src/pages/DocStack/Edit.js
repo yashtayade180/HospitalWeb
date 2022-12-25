@@ -61,7 +61,7 @@ const EditDoc = () => {
   const updateuser = async (e) => {
     e.preventDefault();
 
-    const { name, email, work, add, mobile, desc, age } = inpval;
+    const { name, sex, age, mobile, bloodgroup, city, desc } = inpval;
 
     const res2 = await fetch(`http://localhost:8003/updatedoc/${id}`, {
       method: "PATCH",
@@ -70,12 +70,12 @@ const EditDoc = () => {
       },
       body: JSON.stringify({
         name,
-        email,
-        work,
-        add,
-        mobile,
-        desc,
+        sex,
         age,
+        mobile,
+        bloodgroup,
+        city,
+        desc,
       }),
     });
 
@@ -118,13 +118,13 @@ const EditDoc = () => {
           </div>
           <div class="mb-3 col-lg-6 col-md-6 col-12">
             <label for="exampleInputPassword1" class="form-label">
-              Sex
+              Gender
             </label>
             <input
               type="text"
               value={inpval.sex}
               onChange={setdata}
-              name="gen"
+              name="sex"
               class="form-control"
               id="exampleInputPassword1"
             />
@@ -163,7 +163,7 @@ const EditDoc = () => {
               type="text"
               value={inpval.bloodgroup}
               onChange={setdata}
-              name="work"
+              name="bloodgroup"
               class="form-control"
               id="exampleInputPassword1"
             />
@@ -176,7 +176,7 @@ const EditDoc = () => {
               type="text"
               value={inpval.city}
               onChange={setdata}
-              name="add"
+              name="city"
               class="form-control"
               id="exampleInputPassword1"
             />
