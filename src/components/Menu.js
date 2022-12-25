@@ -40,7 +40,9 @@ const Menu = ({ history }) => {
               <Link
                 className="nav-ele"
                 onClick={() => {
-                  signout(() => <Navigate to="/home" />);
+                  signout(() => {
+                    history.push("/home");
+                  });
                 }}
               >
                 SIGNOUT
