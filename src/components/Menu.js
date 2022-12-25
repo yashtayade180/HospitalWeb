@@ -37,14 +37,14 @@ const Menu = ({ history }) => {
 
           {isAuthenticated() && (
             <li className="x">
-              <span
+              <Link
                 className="nav-ele"
                 onClick={() => {
                   signout(() => <Navigate to="/home" />);
                 }}
               >
                 SIGNOUT
-              </span>
+              </Link>
             </li>
           )}
         </ul>
