@@ -1,4 +1,5 @@
 import { API } from "../backend";
+import { Navigate } from "react-router-dom";
 
 export const signout = (next) => {
   if (typeof window !== "undefined") {
@@ -8,7 +9,6 @@ export const signout = (next) => {
     return fetch(`${API}/signout`, {
       method: "GET",
     })
-      .then(<Navigate to="/home" />)
       .then((response) => console.log("Signout Success!!"))
       .catch((err) => console.log(err));
   }
