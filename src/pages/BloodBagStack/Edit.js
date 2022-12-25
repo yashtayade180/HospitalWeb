@@ -31,12 +31,15 @@ const EditBlood = () => {
   console.log(id);
 
   const getdata = async () => {
-    const res = await fetch(`http://localhost:8003/getblood/${id}`, {
-      method: "GET",
-      headers: {
-        "Content-Type": "application/json",
-      },
-    });
+    const res = await fetch(
+      `https://jeswanihospital.onrender.com/getblood/${id}`,
+      {
+        method: "GET",
+        headers: {
+          "Content-Type": "application/json",
+        },
+      }
+    );
 
     const data = await res.json();
     console.log(data);
@@ -58,16 +61,19 @@ const EditBlood = () => {
 
     const { bloodgroup, quantity } = inpval;
 
-    const res2 = await fetch(`http://localhost:8003/updateblood/${id}`, {
-      method: "PATCH",
-      headers: {
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify({
-        bloodgroup,
-        quantity,
-      }),
-    });
+    const res2 = await fetch(
+      `https://jeswanihospital.onrender.com/updateblood/${id}`,
+      {
+        method: "PATCH",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({
+          bloodgroup,
+          quantity,
+        }),
+      }
+    );
 
     const data2 = await res2.json();
     console.log(data2);

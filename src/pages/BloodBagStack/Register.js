@@ -29,17 +29,20 @@ const RegisterBlood = () => {
 
     const { bloodgroup, quantity } = inpval;
 
-    const res = await fetch("http://localhost:8003/registerblood", {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-        Accept: "application/json",
-      },
-      body: JSON.stringify({
-        bloodgroup,
-        quantity,
-      }),
-    });
+    const res = await fetch(
+      "https://jeswanihospital.onrender.com/registerblood",
+      {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+          Accept: "application/json",
+        },
+        body: JSON.stringify({
+          bloodgroup,
+          quantity,
+        }),
+      }
+    );
 
     const data = await res.json();
     console.log(data);

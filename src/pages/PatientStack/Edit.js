@@ -36,12 +36,15 @@ const EditPatient = () => {
   console.log(id);
 
   const getdata = async () => {
-    const res = await fetch(`http://localhost:8003/getpatient/${id}`, {
-      method: "GET",
-      headers: {
-        "Content-Type": "application/json",
-      },
-    });
+    const res = await fetch(
+      `https://jeswanihospital.onrender.com/getpatient/${id}`,
+      {
+        method: "GET",
+        headers: {
+          "Content-Type": "application/json",
+        },
+      }
+    );
 
     const data = await res.json();
     console.log(data);
@@ -63,21 +66,24 @@ const EditPatient = () => {
 
     const { name, email, work, add, mobile, desc, age } = inpval;
 
-    const res2 = await fetch(`http://localhost:8003/updatepatient/${id}`, {
-      method: "PATCH",
-      headers: {
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify({
-        name,
-        email,
-        work,
-        add,
-        mobile,
-        desc,
-        age,
-      }),
-    });
+    const res2 = await fetch(
+      `https://jeswanihospital.onrender.com/updatepatient/${id}`,
+      {
+        method: "PATCH",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({
+          name,
+          email,
+          work,
+          add,
+          mobile,
+          desc,
+          age,
+        }),
+      }
+    );
 
     const data2 = await res2.json();
     console.log(data2);

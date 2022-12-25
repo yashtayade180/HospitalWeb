@@ -33,21 +33,24 @@ const RegisterBed = () => {
 
     const { bednum, type, name, allotdate, dischargedate, desc } = inpval;
 
-    const res = await fetch("http://localhost:8003/registerbed", {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-        Accept: "application/json",
-      },
-      body: JSON.stringify({
-        bednum,
-        type,
-        name,
-        allotdate,
-        dischargedate,
-        desc,
-      }),
-    });
+    const res = await fetch(
+      "https://jeswanihospital.onrender.com/registerbed",
+      {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+          Accept: "application/json",
+        },
+        body: JSON.stringify({
+          bednum,
+          type,
+          name,
+          allotdate,
+          dischargedate,
+          desc,
+        }),
+      }
+    );
 
     const data = await res.json();
     console.log(data);

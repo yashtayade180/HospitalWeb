@@ -33,7 +33,7 @@ const RegisterOp = () => {
 
     const { patientname, drname, desc, status, remark, date } = inpval;
 
-    const res = await fetch("http://localhost:8003/registerop", {
+    const res = await fetch("https://jeswanihospital.onrender.com/registerop", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",

@@ -20,7 +20,7 @@ const HomeBlood = () => {
   const { dltdata, setDLTdata } = useContext(deldata);
 
   const getdata = async () => {
-    const res = await fetch("http://localhost:8003/getblood", {
+    const res = await fetch("https://jeswanihospital.onrender.com/getblood", {
       method: "GET",
       headers: {
         "Content-Type": "application/json",
@@ -43,12 +43,15 @@ const HomeBlood = () => {
   }, []);
 
   const deleteuser = async (id) => {
-    const res2 = await fetch(`http://localhost:8003/deleteblood/${id}`, {
-      method: "DELETE",
-      headers: {
-        "Content-Type": "application/json",
-      },
-    });
+    const res2 = await fetch(
+      `https://jeswanihospital.onrender.com/deleteblood/${id}`,
+      {
+        method: "DELETE",
+        headers: {
+          "Content-Type": "application/json",
+        },
+      }
+    );
 
     const deletedata = await res2.json();
     console.log(deletedata);
