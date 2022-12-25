@@ -8,6 +8,7 @@ export const signout = (next) => {
     return fetch(`${API}/signout`, {
       method: "GET",
     })
+      .then(<Navigate to="/home" />)
       .then((response) => console.log("Signout Success!!"))
       .catch((err) => console.log(err));
   }
