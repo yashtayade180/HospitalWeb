@@ -34,22 +34,25 @@ const RegisterNurse = () => {
 
     const { name, sex, age, mobile, bloodgroup, city, desc } = inpval;
 
-    const res = await fetch("http://localhost:8003/registernurse", {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-        Accept: "application/json",
-      },
-      body: JSON.stringify({
-        name,
-        sex,
-        age,
-        mobile,
-        bloodgroup,
-        city,
-        desc,
-      }),
-    });
+    const res = await fetch(
+      "https://jeswanihospital.onrender.com/registernurse",
+      {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+          Accept: "application/json",
+        },
+        body: JSON.stringify({
+          name,
+          sex,
+          age,
+          mobile,
+          bloodgroup,
+          city,
+          desc,
+        }),
+      }
+    );
 
     const data = await res.json();
     console.log(data);

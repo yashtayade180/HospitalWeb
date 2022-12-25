@@ -1,10 +1,13 @@
-import React, { Fragment } from "react";
+import React, { Fragment, useEffect } from "react";
 import "./Menu.css";
 import { Link, Navigate } from "react-router-dom";
 import { isAuthenticated, signout } from "../auth/index";
 import Sidebar from "./Sidebar";
 
 const Menu = ({ history }) => {
+  useEffect(() => {
+    console.log("history", history);
+  }, [history]);
   return (
     // <div className='color'>
     <header>
@@ -37,7 +40,7 @@ const Menu = ({ history }) => {
 
           {isAuthenticated() && (
             <li className="x">
-              <Link
+              <span
                 className="nav-ele"
                 onClick={() => {
                   signout(() => {
@@ -46,7 +49,7 @@ const Menu = ({ history }) => {
                 }}
               >
                 SIGNOUT
-              </Link>
+              </span>
             </li>
           )}
         </ul>
