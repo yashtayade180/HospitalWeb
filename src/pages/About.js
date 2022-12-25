@@ -8,13 +8,12 @@ import { BsFillTelephoneInboundFill } from "react-icons/bs";
 const About = () => {
   return (
     <>
-      <Menu />
-
       <div className="first-home-box ">
         <img
-          className="abt-img"
+          className="abtt-img"
           src="https://www.consensusortho.com/wp-content/uploads/2019/10/Blog-Website-Header_Location-of-Patients.png"
         />
+        <Menu />
         <div className="abt-section">
           <div className="abt-subsection">
             <h3 className="home-heading">Meet the best </h3>
@@ -22,17 +21,13 @@ const About = () => {
 
             <p className="home-para">
               {" "}
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore
-              iste reiciendis pariatur itaque exercitationem alias vero,
-              temporibus unde placeat non deserunt neque? Libero. Lorem ipsum
-              dolor, sit amet consectetur adipisicing elit. Error qui
-              accusantium at alias a magnam dolores. Ullam, fugit amet excepturi
-              assumenda mollitia voluptates.
+              We here at Jeswani's are avaliable 24*7 to hear and help our
+              patients.
             </p>
           </div>
           <div class="abt-subsection-img">
             <img
-              src="./images/aboutdoctor.png"
+              src="https://pngimg.com/uploads/doctor/doctor_PNG16041.png"
               alt=""
               className="about-doc"
               style={{ contain: "cover" }}
@@ -80,11 +75,16 @@ const About = () => {
       <div className="abt-hospital">
         <h3 className="abt-hospital-heading">ABOUT US </h3>
         <h4 className="abt-hospital-subheading">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore iste
-          reiciendis pariatur itaque exercitationem alias vero, temporibus unde
-          placeat non deserunt neque? Libero. Lorem ipsum dolor, sit amet
-          consectetur adipisicing elit. Error qui accusantium at alias a magnam
-          dolores. Ullam, fugit amet excepturi assumenda mollitia voluptates.
+          Jeswani Multispeciality Hospital is committed to maintain the highest
+          standard of care and respond to the needs of the community in a
+          compassionate manner.To provide state-of-the-art, high quality and
+          cost-effective healthcare services and latest information to improve
+          and maintain health for the well-being of the community.To
+          unrelentingly pursue the creation of value for our customers,
+          shareholders, employees and society at large.To foster a therapeutic
+          relationship based on compassion that is felt, quality that is
+          measurable and cost that is affordable.To become partners in health
+          promotion with every section of society.
         </h4>
       </div>
 

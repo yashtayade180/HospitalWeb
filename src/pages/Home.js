@@ -6,20 +6,21 @@ import Menu from "../components/Menu";
 const Home = () => {
   return (
     <>
-      <Menu />
       <div className="color">
         <div className="first-home-box ">
+          <Menu />
           <div class="row">
             <div class="col">
               <h3 className="home-heading">JESWANI HOSPITAL</h3>
               <p className="home-para">
                 {" "}
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore
-                iste reiciendis pariatur itaque exercitationem alias vero,
-                temporibus unde placeat non deserunt neque? Libero. Lorem ipsum
-                dolor, sit amet consectetur adipisicing elit. Error qui
-                accusantium at alias a magnam dolores. Ullam, fugit amet
-                excepturi assumenda mollitia voluptates.
+                Jeswani Hospital is a multi-specialty, tertiary care Hospital
+                that lays its foundation on a Patient first ideology. The
+                hospital caters to most branches of medicine. We started our
+                service on 14 August 2022.Situated in Nagpur, Jeswani Hospital
+                is the epitome of medical innovations and quality healthcare
+                that offers easy connectivity and accessibility to patients from
+                all the nodes across the City.
               </p>
             </div>
             <div class="col">
@@ -53,18 +54,18 @@ const Home = () => {
 
       <div>
         <h2 className="about-heading">About Our Hospital</h2>
-        <img src="/images/about-img.png" alt="" className="about-doc" />
+        <img src="/images/about-img.png" alt="" className="about-doct" />
         <p className="about-para">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero velit
-          ipsam explicabo exercitationem, itaque tenetur corporis hic dolorum
-          delectus ducimus magnam nesciunt quod dolorem sed! Inventore saepe
-          magnam quasi odio maiores aliquid sed natus! Lorem ipsum dolor sit
-          amet consectetur, adipisicing elit. Optio, debitis? Praesentium,
-          voluptates animi!
+          Healthcare is the most important aspect of life, and the pandemic has
+          made this true more than ever. At Jeswani Hospital, our exceptional
+          team of doctors, nurses and caregivers come together to bring you
+          excellent care with the latest technologies, best medicine, and
+          warmest service. The Jeswani Multispeciality Hospital is situated on
+          the main Nagpur.
         </p>
 
         <button className="abt-btn">
-          <Link to="/dashboard" className="button">
+          <Link to="/about" className="button">
             Read More
           </Link>
         </button>
@@ -98,7 +99,7 @@ const Home = () => {
         </div>
 
         <button className="abt-btn">
-          <Link to="/Signup" className="button">
+          <Link to="/Home" className="button">
             Read More
           </Link>
         </button>

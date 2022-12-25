@@ -112,11 +112,11 @@ html {
 }
 
 #bedcol {
-  color: blue;
+  color: rgb(50, 50, 249);
 }
 
 #doccol {
-  color: rgb(241, 1, 1);
+  color: rgb(245, 35, 35);
 }
 
 #patcol {
@@ -128,15 +128,15 @@ html {
 }
 
 #nurcol {
-  color: rgb(255, 160, 58);
+  color: rgb(247, 243, 21);
 }
 
 #romcol {
-  color: rgb(243, 53, 243);
+  color: rgb(29, 241, 146);
 }
 
 #accol {
-  color: rgb(169, 18, 250);
+  color: rgb(254, 137, 41);
 }
 
 #repcol {
@@ -144,10 +144,10 @@ html {
 }
 
 #opcol {
-  color: rgb(228, 4, 187);
+  color: rgb(201, 22, 168);
 }
 #bircol {
-  color: rgb(239, 153, 61);
+  color: rgb(228, 172, 113);
 }
 
 .dash-menu {

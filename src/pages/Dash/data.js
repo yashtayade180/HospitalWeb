@@ -71,17 +71,17 @@ const articles = [
   },
   {
     name: "doc",
-    title: "Op. Report",
-    thumbnail: "/images/operation.png",
-    color: "opcol",
-    database: "3",
+    title: "Patients",
+    thumbnail: "/images/dash1.jpg",
+    color: "patcol",
+    database: "456",
   },
   {
     name: "doc",
-    title: "Birth Report",
-    thumbnail: "/images/birth.jpg",
-    color: "bircol",
-    database: "1",
+    title: "Blood",
+    thumbnail: "/images/dash_blood.png",
+    color: "blocol",
+    database: "12",
   },
 ];
 
