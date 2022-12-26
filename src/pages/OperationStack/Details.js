@@ -114,8 +114,9 @@ const DetailsOp = () => {
                 style={{
                   width: 140,
                   marginBottom: 10,
+                  marginTop: 15,
                   height: 140,
-                  marginLeft: 65,
+                  marginLeft: 80,
                 }}
                 alt="profile"
               />
