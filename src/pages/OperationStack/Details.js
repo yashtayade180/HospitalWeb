@@ -8,6 +8,7 @@ import WorkIcon from "@mui/icons-material/Work";
 import PhoneAndroidIcon from "@mui/icons-material/PhoneAndroid";
 import LocationOnIcon from "@mui/icons-material/LocationOn";
 import { NavLink, useParams, useNavigate } from "react-router-dom";
+import moment from "moment";
 
 const DetailsOp = () => {
   const [getuserdata, setUserdata] = useState([]);
@@ -147,7 +148,8 @@ const DetailsOp = () => {
               </h4>
               <h4 className="mt-3">
                 <LocationOnIcon />
-                Date: <span>{getuserdata.date}</span>
+                Date:{" "}
+                <span>{moment(getuserdata.date).format("DD-MM-YYYY")}</span>
               </h4>
             </div>
           </div>

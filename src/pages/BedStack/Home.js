@@ -8,6 +8,7 @@ import { updatedata } from "./context/ContextProvider";
 import Menu from "../../components/Menu";
 import Sidebar from "../../components/Sidebar";
 import "./Bed.css";
+import moment from "moment";
 
 const HomeBed = () => {
   const [getuserdata, setUserdata] = useState([]);
@@ -195,8 +196,12 @@ const HomeBed = () => {
                         <td>{element.name}</td>
                         <td>{element.bednum}</td>
                         <td>{element.type}</td>
-                        <td>{element.allotdate}</td>
-                        <td>{element.dischargedate}</td>
+                        <td>
+                          {moment(element.allotdate).format("DD-MM-YYYY")}
+                        </td>
+                        <td>
+                          {moment(element.dischargedate).format("DD-MM-YYYY")}
+                        </td>
                         <td className="d-flex justify-content-between">
                           <NavLink to={`viewbed/${element._id}`}>
                             {" "}

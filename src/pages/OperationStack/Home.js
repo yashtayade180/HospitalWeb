@@ -8,6 +8,7 @@ import { updatedata } from "./context/ContextProvider";
 import Menu from "../../components/Menu";
 import Sidebar from "../../components/Sidebar";
 import "./Op.css";
+import moment from "moment";
 
 const HomeOp = () => {
   const [getuserdata, setUserdata] = useState([]);
@@ -197,7 +198,7 @@ const HomeOp = () => {
                         <td>{element.desc}</td>
                         <td>{element.status}</td>
                         <td>{element.remark}</td>
-                        <td>{element.date}</td>
+                        <td>{moment(element.date).format("DD-MM-YYYY")}</td>
                         <td className="d-flex justify-content-between">
                           <NavLink
                             to={`/dashboard/operationdetails/viewop/${element._id}`}

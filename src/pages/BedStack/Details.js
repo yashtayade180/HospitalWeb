@@ -9,6 +9,7 @@ import PhoneAndroidIcon from "@mui/icons-material/PhoneAndroid";
 import LocationOnIcon from "@mui/icons-material/LocationOn";
 import { NavLink, useParams, useNavigate } from "react-router-dom";
 import CloseIcon from "@mui/icons-material/Close";
+import moment from "moment";
 
 const DetailsBed = () => {
   const [getuserdata, setUserdata] = useState([]);
@@ -143,11 +144,17 @@ const DetailsBed = () => {
             >
               <h4 className="mt-3">
                 <LocationOnIcon />
-                Allotment Date: <span>{getuserdata.allotdate}</span>
+                Allotment Date:{" "}
+                <span>
+                  {moment(getuserdata.allotdate).format("DD-MM-YYYY")}
+                </span>
               </h4>
               <h4 className="mt-3">
                 <LocationOnIcon />
-                Discharge Date: <span>{getuserdata.dischargedate}</span>
+                Discharge Date:{" "}
+                <span>
+                  {moment(getuserdata.dischargedate).format("DD-MM-YYYY")}
+                </span>
               </h4>
               <h4 className="mt-3">
                 Description: <span>{getuserdata.desc}</span>
