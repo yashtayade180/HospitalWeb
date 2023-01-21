@@ -97,6 +97,7 @@ const Signin = () => {
                 onChange={handleChange("email")}
                 value={email}
                 className="form-control"
+                placeholder="sha@gmail.com"
                 id="inputlg"
                 type="email"
               />
@@ -110,6 +111,7 @@ const Signin = () => {
                 className="form-control"
                 id="inputlg"
                 type="password"
+                placeholder="123"
               />
             </div>
             <button
